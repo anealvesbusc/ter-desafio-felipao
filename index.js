@@ -1,11 +1,13 @@
 class heroiVantura {
-    constructor (nome, idade, ) {
-        this.nome = nome
-        this.idade = idade 
-        this.tipo = tipo   
-
+    constructor (tipo, ataque, ) {
+        this.tipo = tipo
+        this.ataque = ataque
+        
     }
-    
+    atacar() {
+        console.log(`O ${this.tipo} atacou usando ${this.ataque}`)
+    }
 }
-let tipoHeroi = new heroiVantura ("Vapira" , 37, "ninja" ) 
-console.log (tipoHeroi)                           
+let heroiHabilid = new heroiVantura ("Ninja", "shuriken") 
+
+heroiHabilid.atacar()
